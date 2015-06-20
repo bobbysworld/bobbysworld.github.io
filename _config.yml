@@ -1,0 +1,11 @@
+# Site settings
+title: Bobbys World - Random thoughts about life and design
+email: hello@bobbyreyes.io
+description: 
+baseurl:
+url: "http://bobbysworld.me" # the base hostname & protocol for your site
+twitter_username: bobbyreys
+
+# Build settings
+markdown: kramdown
+permalink: /:title
