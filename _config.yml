@@ -5,6 +5,7 @@ description:
 baseurl:
 url: "http://bobbysworld.me" # the base hostname & protocol for your site
 twitter_username: bobbyreys
+paginate: 3
 
 # Build settings
 markdown: kramdown
