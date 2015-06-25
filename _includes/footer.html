@@ -1,9 +1,44 @@
 <footer class="panel--centered" role="contentinfo">
   <div class="grid">
     <div class="centered grid__col--6">
-    	<img class="img--avatar" src="/img/logo.png">
+    	
       <p>{{ site.description }} <br>
-        For more random thoughts follow me <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>
+       <strong>Let's Connect</strong>
+       
+
+     <style>
+		#social {
+    		text-align:center;
+    		display:inline-block;
+    		margin: 0 auto;
+     		padding: 2px 12px;
+		}
+	</style>
+
+
+    <ul id="social">
+			{% if site.twitter_username %}
+			<li id="social">
+			<a href="https://twitter.com/{{ site.twitter_username }}">
+			  <i class="fa fa-twitter"></i> Twitter
+			</a>
+			</li>
+			{% endif %}
+			{% if site.github_username %}
+			<li id="social">
+			<a href="https://github.com/{{ site.github_username }}">
+			  <i class="fa fa-github"></i> GitHub
+			</a>
+			</li>
+			{% endif %}
+			{% if site.linkedin_username %}
+			<li id="social">
+			<a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+			  <i class="fa fa-linkedin"></i> LinkedIn
+			</a>
+			</li>
+			{% endif %}
+        </ul>
       </p>
     </div>
   </div>
